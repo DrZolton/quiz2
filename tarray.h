@@ -8,6 +8,11 @@
 	John Dolan			Ohio University 
 ********************************************************************/
 
+/**
+ * @file tarray.h
+ * a template class for dynamic arrays
+ */
+
 #include<iostream>
 
 template<class T>

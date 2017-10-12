@@ -7,6 +7,11 @@
 		John Dolan	School of EECS		Summer 2013
 ************************************************************************/
 
+/**
+ * @file course.h
+ * class used to store credit hours and gpa of courses
+ */
+
 #include<iostream>
 #include<string>
 #ifndef COURSE_H

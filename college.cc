@@ -4,6 +4,12 @@
 //CS 2401
 //10/8/2015
 //********************
+
+/**
+ * @file college.cc
+ * adds and removes courses from a linked list
+ */
+
 #include "college.h"
 #include<cstdlib>
 #include<iostream>

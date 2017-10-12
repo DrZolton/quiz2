@@ -3,6 +3,13 @@
 	course.
 		John Dolan		School of EECS		Summer2013
 **************************************************************************/
+
+/**
+ * @file course.cc
+ * class containing functions for adding and removing
+ * courses with their credit hours and gpa
+ */
+
 #include "course.h"
 #include<cstdlib>
 #include<iostream>
@@ -14,6 +21,11 @@ course::course(){
     hours = 0.0;
 }
 
+/**
+ * function allowing for input of new courses
+ *
+ * @param ins the istream from either the console or input file
+ */
 void course::input(std::istream& ins){
     if(ins == cin){
 	cout<<"Course Number: ";
@@ -39,6 +51,12 @@ void course::input(std::istream& ins){
     }
 }
 
+/**
+ * const function allowing for the output of the courses, their gpa
+ * credit hours
+ *
+ * @param outs the ostream for either the console or output file
+ */
 void course::output(std::ostream& outs)const{
     if(outs == cout){
 	outs<<"Course Number:"<<course_number<<endl;
@@ -52,7 +70,11 @@ void course::output(std::ostream& outs)const{
       }
 }
 
-
+/**
+ * const function for finding the numerical value of letter grades
+ *
+ * @return the numerical value of the grade
+ */
 double course::get_number_grade()const{
     if(grade == "A") return 4.0;
     if(grade == "A-") return 3.667;

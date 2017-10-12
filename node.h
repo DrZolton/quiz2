@@ -5,6 +5,12 @@
                 John Dolan  		March 2009
 *************************************************************************/
 
+/**
+ * @file node.h
+ * a class containing a variable type and pointer to that type
+ * as specified by the programmer 
+ */
+
 #ifndef NODE_H
 #define NODE_H
 #include "course.h"
@@ -31,6 +37,11 @@ class node{
 		{return link_field;}
 
     private:
+
+	/**
+	 * @var data_field
+	 * a variable type specified by the programmer
+	 */
 	value_type data_field;
 	node* link_field;
 };

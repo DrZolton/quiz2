@@ -5,6 +5,12 @@
 //10/8/2015
 //********************
 
+/**
+ * @file college.h
+ * class used to add and remove courses with their
+ * credit hours and gpa
+ */
+
 #include <iostream>
 #include <fstream>
 #include <string>
@@ -30,6 +36,11 @@ class College{
 	void save(std::ostream& outs);
 	void load(std::istream& ins);
 	private:
+
+	/**
+	 * @var name
+	 * contains a name of a course
+	 */
 	std::string name;
 	node * head;
 

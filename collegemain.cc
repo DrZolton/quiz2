@@ -12,6 +12,12 @@
 	John Dolan			Spring 2015
 **********************************************************/
 
+/**
+ * @file collegemain.cc
+ * main file for the program. calls on functions in college.cc to
+ * store courses and their info
+ */
+
 #include <iostream>
 #include <fstream>
 #include <string>
